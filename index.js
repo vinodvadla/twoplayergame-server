@@ -35,6 +35,8 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('moveMade', data);
   });
 
+
+  
   // Handle disconnect
   socket.on('disconnect', () => {
     delete players[socket.id];
